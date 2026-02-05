@@ -6,5 +6,9 @@ INSERT INTO "public"."subjects" ("id", "name", "description", "school_class_id",
 	('2afa9715-b8f6-463e-a292-7b187cac6898', 'Mathematics', NULL, '79eea6a5-591a-4d2b-829f-357f4f2ec236', '2026-01-03 15:32:32.711383+00', '2026-01-03 15:32:32.711383+00'),
 	('25038e22-e7b8-412d-8b35-b87f982d4604', 'Chemistry', NULL, '79eea6a5-591a-4d2b-829f-357f4f2ec236', '2026-01-03 15:33:10.622296+00', '2026-01-03 15:33:10.622296+00'),
 	('d1544b65-ecd9-4762-8d0d-667b7329e807', 'Biology', NULL, '79eea6a5-591a-4d2b-829f-357f4f2ec236', '2026-01-03 15:33:23.391897+00', '2026-01-03 15:33:23.391897+00'),
-	('de2241a3-9311-447a-a942-7630f1b37877', 'Physics', NULL, '79eea6a5-591a-4d2b-829f-357f4f2ec236', '2026-01-03 16:44:12.406137+00', '2026-01-03 16:44:12.406137+00');
+	('de2241a3-9311-447a-a942-7630f1b37877', 'Physics', NULL, '79eea6a5-591a-4d2b-829f-357f4f2ec236', '2026-01-03 16:44:12.406137+00', '2026-01-03 16:44:12.406137+00')
+ON CONFLICT ("id") DO NOTHING;
 
+
+INSERT INTO "public"."subjects" ("id", "name", "description", "school_class_id", "created_at", "updated_at") VALUES ('11ea3956-d46e-4476-bb2c-a50afa027f5c', 'Maths - Corodova', '6th Class Corodova book of Mathematics', 'cc20f630-f811-49a2-ba21-632562b16ad0', '2026-02-04 09:30:05.596168+00', '2026-02-04 09:30:05.596168+00')
+ON CONFLICT ("id") DO NOTHING;

@@ -23,6 +23,8 @@ SET row_security = off;
 \i supabase/seeds/004_chapters.sql
 \i supabase/seeds/005_topics.sql
 \i supabase/seeds/006_concepts.sql
-
+\i supabase/seeds/007_orgs.sql
+\i supabase/seeds/008_bank_questions.sql
+\i supabase/seeds/009_bank_questions_concepts_maps.sql
 -- RE-ENABLE triggers when finished (Crucial!)
 SET session_replication_role = DEFAULT;
