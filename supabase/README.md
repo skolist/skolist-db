@@ -40,3 +40,5 @@ supabase db reset
 ```bash
 cat supabase/seeds/*.sql > supabase/seed.sql
 ```
+
+- Try to avoid editing the seed.sql file directly or pushing content to remote repo from this file
