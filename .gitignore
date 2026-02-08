@@ -4,3 +4,6 @@ supabase/.temp
 # Local environment variables (IMPORTANT: do not leak these)
 .env
 .env.local
+
+# Virtual Env
+venv

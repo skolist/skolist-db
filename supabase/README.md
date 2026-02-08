@@ -39,6 +39,15 @@ cat supabase/seeds/*.sql > supabase/seed.sql
 
 - Try to avoid editing the seed.sql file directly or pushing content to remote repo from this file
 
+### 2.3 Creating Dummy Users
+
+- Ensure that .env is filled with the supabase local project url and local service role key (sb-secret)
+```bash
+python -m venv venv
+source venv/bin/active # for linux , activate properly as per your OS
+pip install requirements.txt
+python seed_users.py
+```
 ### 2.4 Stopping supabase locally
 
 Run the following command to stop the supabase local development setup:
