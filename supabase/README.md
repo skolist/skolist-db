@@ -48,3 +48,29 @@ Run the following command to stop the supabase local development setup:
 ```bash
 supabase stop
 ```
+
+## 3. Steps to run supabase on supabase's cloud
+
+### 3.1 Creating a new project on supabase
+
+Follow the instructions on the [Supabase Documentation](https://supabase.com/docs/guides/getting-started/create-project) to create a new project on supabase.
+
+### 3.2 Logging in locally into that cloud project
+
+```bash
+supabase login
+```
+### 3.3 Linking this repo to your cloud project
+
+```bash
+supabase link --project-ref <your-project-id>
+```
+
+### 3.4 Resetting the cloud project to match the repo schema and seed data
+
+```bash
+supabase db reset --linked
+```
+
+### 3.5 Rest
+- Other steps as copying the service role key, anon key etc. stay the same as the local hosting
